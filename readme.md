@@ -1,6 +1,6 @@
 # Kirbycook
 
-Kirbycook ist ein einfach Kochbuch, dass auf dem CMS Kirby basiert.
+Kirbycook ist ein einfaches Kochbuch, das auf dem CMS Kirby basiert.
 
 
 ## .htaccess
