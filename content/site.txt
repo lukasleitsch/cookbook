@@ -1,0 +1,3 @@
+Title: kochbuch:yourname
+----
+extern: rezepte-second
