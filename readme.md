@@ -7,6 +7,10 @@ Kirbycook ist ein einfach Kochbuch, dass auf dem CMS Kirby basiert.
 
 Wenn das Projekt lokal nicht läuft, in der `.htaccess` nachschauen und `RewriteBase` entsprechen anpassen.
 
-## Projekt klonen
+## Projekt laden
 
-Wenn du das Projekt über Git geklonet hast, muss du noch `git submodule update --init --recursive` in dem Projekt ausführen. Damit werden alle nötigen Submodule geladen.
+Damit Kirby vollständig geladen wird, muss das Projekt geklont werden. Anschließend Kirby mit `git submodule update --init --recursive` dem Projekt hinzufügen.
+
+## Anpassungen
+
+Das Template basiert auf Bootstrap und SASS. Bei Anpassungen muss die CSS-Datei neu kompiliert werden.
