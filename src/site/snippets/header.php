@@ -44,7 +44,7 @@ if($page->images()->sortBy('sort', 'asc')->first()){
   </div>
     <form>
       <div class="input-group">
-          <input type="search" class="form-control" name="q" id="autocomplete" value="<?php echo esc($query) ?>">
+        <input type="search" class="form-control" name="q" id="autocomplete" value="<?php echo isset($query) ? esc($query) : '' ?>">
           <span class="input-group-btn">
             <input class="btn btn-default" type="submit" value="Suchen">
           </span>
