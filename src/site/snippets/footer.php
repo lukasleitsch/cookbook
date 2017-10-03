@@ -1,8 +1,14 @@
 <footer class="main">
-<div class="container">
-	<hr>
-	<p>In diesem Kochbuch befinden sich <?php echo page('rezepte')->children()->visible()->count() ?> Rezepte &bull; <a href="<?php echo url()."/tag:none" ?>">Keine Tags</a></p>
-</div>
+  <div class="container">
+    <hr>
+    <p><?php if ($user = $site->user()): ?>
+        <a href="<?php echo url('logout') ?>">Logout</a> &bull;
+      <?php endif ?>In diesem Kochbuch befinden sich <?php echo page('rezepte')
+        ->children()
+        ->visible()
+        ->count() ?> Rezepte &bull; <a href="<?php echo url() . "/tag:none" ?>">Keine
+        Tags</a></p>
+  </div>
 </footer>
 
 <?php echo js('assets/js/jquery.min.js') ?>

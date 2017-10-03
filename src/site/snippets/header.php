@@ -1,3 +1,5 @@
+<?php if(!$site->user()) go('/login') ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

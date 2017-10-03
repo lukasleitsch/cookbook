@@ -1,0 +1,7 @@
+title: Anmelden
+----
+alert: Passwort ist ungültig
+----
+password: Passwort
+----
+button: Anmelden

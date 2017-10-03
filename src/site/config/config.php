@@ -28,3 +28,32 @@ make Kirby work. For more fine-grained configuration
 of the system, please check out http://getkirby.com/docs/advanced/options
 
 */
+
+c::set('roles', array(
+  array(
+    'id'      => 'admin',
+    'name'    => 'Admin',
+    'default' => true,
+    'panel'   => true
+  ),
+  array(
+    'id'      => 'editor',
+    'name'    => 'Editor',
+    'panel'   => true
+  ),
+  array(
+    'id'      => 'user',
+    'name'    => 'User',
+    'panel'   => false
+  )
+));
+
+c::set('routes', array(
+  array(
+    'pattern' => 'logout',
+    'action'  => function() {
+      if($user = site()->user()) $user->logout();
+      go('login');
+    }
+  )
+));
