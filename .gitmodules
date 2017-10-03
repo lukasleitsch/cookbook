@@ -1,0 +1,6 @@
+[submodule "src/kirby"]
+	path = src/kirby
+	url = https://github.com/getkirby/kirby.git
+[submodule "src/panel"]
+	path = src/panel
+	url = https://github.com/getkirby/panel.git
