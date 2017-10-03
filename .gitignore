@@ -3,5 +3,7 @@ src/site/accounts
 src/site/cache
 src/thumbs
 src/assets/css/
+src/assets/fonts/
 
 .idea/
+node_modules/

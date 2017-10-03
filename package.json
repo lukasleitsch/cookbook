@@ -1,0 +1,33 @@
+{
+  "name": "cookbook",
+  "version": "1.0.0",
+  "description": "A cookbook based on kirby.",
+  "main": "src/index.php",
+  "scripts": {
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukasleitsch/cookbook.git"
+  },
+  "keywords": [
+    "cookbook",
+    "recipes",
+    "kirby"
+  ],
+  "author": "Lukas Leitsch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lukasleitsch/cookbook/issues"
+  },
+  "homepage": "https://github.com/lukasleitsch/cookbook#readme",
+  "devDependencies": {
+    "laravel-mix": "^1.4.5"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}

@@ -1,5 +1,7 @@
-@import "bootstrap",
-				"jquery-ui";
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+@import "jquery-ui";
 
 html {
   box-sizing: border-box;
@@ -126,12 +128,12 @@ ul.rezepte {
 	padding: 0;
 	li {
 		list-style-type: none;
-		
+
 	}
 }
 
 @for $i from 1 through 3 {
-  .star-#{$i} { 
+  .star-#{$i} {
   	color: gold;
   }
 }
@@ -155,7 +157,7 @@ ul.rezepte {
 		@media (min-width: 1025px) {
 			width: 25%;
 		}
-		font-size: 20px; 
+		font-size: 20px;
 	}
 	.panel {
 		margin-left: 22px;
@@ -234,7 +236,7 @@ header.main {
 	 .col-sm-1 {
 	  width: 8.333333333333332%;
 	 }
-	
+
 	header {
 		display: none;
 	}
