@@ -57,3 +57,12 @@ c::set('routes', array(
     }
   )
 ));
+
+/**
+ * Increase session timeout
+ *
+ * @source https://forum.getkirby.com/t/login-session-lifetime-extending-for-the-frontend/2922/4
+ */
+
+s::$timeout = 60 * 24 * 30; // 30 days
+s::$cookie['lifetime'] = 0; // don't let the cookie ever expire
