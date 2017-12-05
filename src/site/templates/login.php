@@ -16,7 +16,7 @@
           <form method="post">
             <div class="form-group">
               <label for="password"><?php echo $page->password()->html() ?></label>
-              <input type="password" id="password" name="password" class="form-control">
+              <input type="password" id="password" name="password" class="form-control" autofocus>
             </div>
             <div>
               <input type="submit" name="login" class="btn btn-default"
