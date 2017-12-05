@@ -85,6 +85,8 @@ header.main {
     &__wrap {
         display: flex;
         flex-direction: column;
+        font-size: 18px;
+        margin-top: 1.6rem;
     }
 }
 .tags {
