@@ -26,13 +26,22 @@ mix.sass('src/assets/sass/style.scss', 'css/');
 // mix.less(src, output);
 // mix.stylus(src, output);
 // mix.postCss(src, output, [require('postcss-some-plugin')()]);
-// mix.browserSync('my-site.dev');
+mix.browserSync({
+  proxy: 'cookbook.dev',
+  files: [
+    'src/assets/js/*.js',
+    'src/assets/css/*.css',
+    'src/site/**/*.php',
+    'src/content/**/*.txt'
+  ],
+  open: false
+});
 // mix.combine(files, destination);
 // mix.babel(files, destination); <-- Identical to mix.combine(), but also includes Babel compilation.
 // mix.copy(from, to);
 // mix.copyDirectory(fromDir, toDir);
 // mix.minify(file);
-// mix.sourceMaps(); // Enable sourcemaps
+mix.sourceMaps(); // Enable sourcemaps
 // mix.version(); // Enable versioning.
 // mix.disableNotifications();
 mix.setPublicPath('src/assets/');
