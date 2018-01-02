@@ -1,0 +1,15 @@
+title: Site
+
+files: true
+
+fields:
+  title:
+    label: Site Title
+    type:  text
+
+  pagesForSearch:
+    label: Include pages into search
+    type: checkboxes
+    options: query
+    query:
+      fetch: children

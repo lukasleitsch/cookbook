@@ -26,15 +26,17 @@
 	});
 
 	var availableTags = [
-		<?php 
-			$rezepte = new Pages();
-			$rezepte->add(page('rezepte')->children()->visible());
-			foreach ($rezepte as $rezept) {
-				echo "{";
-				echo '"value":"'.str_replace('"', '\"', $rezept->title()).'",';
-				echo '"url":"'.$rezept->url().'"';
-				echo "},";
-			}
+		<?php
+			$pagesForSearch = $site->pagesForSearch()->split();
+			foreach ($pagesForSearch as $pageItem) {
+			  $childen = page($pageItem)->children()->visible();
+			  foreach ($childen as $child) {
+                echo "{";
+                echo '"value":"'.str_replace('"', '\"', $child->title()).'",';
+                echo '"url":"' . $child->url() . '"';
+                echo "},";
+              }
+              }
 		 ?>
 
 	];
