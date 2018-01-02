@@ -88,7 +88,22 @@ header.main {
         font-size: 18px;
         margin-top: 1.6rem;
     }
+
+    .footer-links {
+        margin: 20px 0 0 0;
+        padding: 0;
+
+        li {
+            display: inline-block;
+
+            &:not(:first-child)::before {
+                content: '\2022';
+            }
+        }
+    }
+
 }
+
 .tags {
     h2 {
         @extend %title;

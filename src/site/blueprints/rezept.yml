@@ -31,5 +31,8 @@ fields:
     label: Zutaten
     type:  textarea
   zubereitung:
-  	label: Zubereitung
-  	type: textarea
+    label: Zubereitung
+    type: textarea
+  source:
+    label: Quelle
+    type: url

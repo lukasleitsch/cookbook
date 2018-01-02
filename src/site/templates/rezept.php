@@ -27,10 +27,18 @@
       <?php echo $page->zubereitung()->kirbytext() ?>
     </div>
   </div>
-  <div class="edit">
-    <a href="<?php echo url('panel/pages/' . $page->uri() . '/edit') ?>">Rezept
-      bearbeiten</a>
-  </div>
+  <ul class="footer-links">
+    <?php if ($page->source()->isNotEmpty()): ?>
+      <li>
+        <a target="_blank" rel="noopener noreferrer"
+           href="<?= $page->source()->url() ?>">Quelle</a>
+      </li>
+    <?php endif ?>
+    <li>
+      <a href="<?php echo url('panel/pages/' . $page->uri() . '/edit') ?>">Rezept
+        bearbeiten</a>
+    </li>
+  </ul>
 </div>
 
 <?php snippet('footer') ?>
