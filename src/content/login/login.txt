@@ -2,6 +2,8 @@ title: Anmelden
 ----
 alert: Passwort ist ungültig
 ----
+username: Benutzername
+----
 password: Passwort
 ----
 button: Anmelden

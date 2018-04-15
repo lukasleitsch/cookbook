@@ -10,7 +10,7 @@ return function($site, $pages, $page) {
 
     // fetch the user by username and run the
     // login method with the password
-    if($user = $site->user('user') and $user->login(get('password'))) {
+    if($user = $site->user(get('username')) and $user->login(get('password'))) {
       // redirect to the homepage
       // if the login was successful
       go('/');

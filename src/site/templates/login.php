@@ -15,8 +15,12 @@
         <div class="panel-body">
           <form method="post">
             <div class="form-group">
+              <label for="username"><?= $page->username()->html() ?></label>
+              <input type="text" id="username" name="username" class="form-control" autofocus>
+            </div>
+            <div class="form-group">
               <label for="password"><?php echo $page->password()->html() ?></label>
-              <input type="password" id="password" name="password" class="form-control" autofocus>
+              <input type="password" id="password" name="password" class="form-control">
             </div>
             <div>
               <input type="submit" name="login" class="btn btn-default"
