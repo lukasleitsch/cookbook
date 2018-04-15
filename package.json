@@ -25,9 +25,9 @@
   },
   "homepage": "https://github.com/lukasleitsch/cookbook#readme",
   "devDependencies": {
-    "browser-sync": "^2.23.2",
-    "browser-sync-webpack-plugin": "^1.2.0",
-    "laravel-mix": "^1.7.2"
+    "browser-sync": "^2.23.6",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "laravel-mix": "^2.1.11"
   },
   "dependencies": {
     "bootstrap-sass": "^3.3.7"
